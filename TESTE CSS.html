@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de CSS Personalizado</title>
+  <style>
+    /* ---------- 1. Estilização dos links ---------- */
+    a {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: lemonchiffon; /* "lemon" não é reconhecido, usamos 'lemonchiffon' */
+    }
+
+    /* ---------- 2. Parágrafos ---------- */
+    p {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Parágrafo imediatamente após h1 em negrito */
+    h1 + p {
+      font-weight: bold;
+    }
+
+    /* ---------- 3. Classe .destaque ---------- */
+    .destaque {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Se for um parágrafo com .destaque, fica em negrito */
+    p.destaque {
+      font-weight: bold;
+    }
+
+    /* Se for um <strong> com .destaque, fica vermelho */
+    strong.destaque {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo à Página de Exemplo</h1>
+  <p>Este parágrafo vem logo após o h1 e está em negrito.</p>
+  <p>Este parágrafo não está em negrito, mas tem a fonte Arial.</p>
+
+  <h2>Links</h2>
+  <p>Veja o site do <a href="https://www.example.com">Example</a> para mais informações.</p>
+
+  <h2>Classe .destaque</h2>
+  <p class="destaque">Este parágrafo usa a classe destaque (Arial + negrito).</p>
+  <p>Texto com <strong class="destaque">destaque em vermelho</strong> usando a classe em um <strong>.</p>
+
+</body>
+</html>
